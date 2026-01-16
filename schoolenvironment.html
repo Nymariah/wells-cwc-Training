@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lesson Plan: Foundations of Education</title>
+    <style>
+        :root {
+            --primary-color: #2c3e50;
+            --secondary-color: #34495e;
+            --accent-color: #3498db;
+            --bg-color: #f4f7f6;
+            --text-color: #333;
+            --white: #ffffff;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: var(--text-color);
+            background-color: var(--bg-color);
+            margin: 0;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: auto;
+            background: var(--white);
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+        }
+
+        header {
+            border-bottom: 4px solid var(--accent-color);
+            margin-bottom: 30px;
+            padding-bottom: 10px;
+        }
+
+        h1 { color: var(--primary-color); margin-bottom: 5px; }
+        h2 { color: var(--secondary-color); border-bottom: 1px solid #ddd; padding-bottom: 5px; margin-top: 30px; }
+        h3 { color: var(--accent-color); }
+
+        .metadata {
+            background: #eef2f3;
+            padding: 15px;
+            border-radius: 5px;
+            font-size: 0.95em;
+            margin-bottom: 20px;
+        }
+
+        .objective-list, .sequence-list {
+            padding-left: 20px;
+        }
+
+        .interactive-card {
+            background: #fff;
+            border: 1px solid #ddd;
+            padding: 15px;
+            margin-bottom: 10px;
+            border-left: 5px solid var(--accent-color);
+            cursor: pointer;
+            transition: transform 0.2s;
+        }
+
+        .interactive-card:hover {
+            transform: translateX(5px);
+            background: #f9f9f9;
+        }
+
+        .hidden-content {
+            display: none;
+            margin-top: 10px;
+            font-style: italic;
+            color: #555;
+        }
+
+        .activity-box {
+            background: #d1ecf1;
+            border: 1px solid #bee5eb;
+            padding: 20px;
+            border-radius: 5px;
+            margin-top: 20px;
+        }
+
+        footer {
+            margin-top: 40px;
+            font-size: 0.8em;
+            text-align: center;
+            color: #777;
+        }
+
+        button {
+            background: var(--accent-color);
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <header>
+        <h1>Foundations of Education</h1>
+        <p><strong>Topic:</strong> The School as a Social System & The Nature of Students</p>
+    </header>
+
+    <div class="metadata">
+        <strong>Textbook Reference:</strong> Parkay, F. W. (11th Ed.). <em>Becoming A Teacher</em>. <br>
+        <strong>Chapters:</strong> Chapter 4 (School Environment) & Chapter 8 (Today's Students)
+    </div>
+
+    <section>
+        <h2>I. Student Learning Objectives</h2>
+        <ul class="objective-list">
+            <li>Analyze the <strong>social organization</strong> of schools and how it influences teacher-student interactions.</li>
+            <li>Define the <strong>hidden curriculum</strong> and its impact on student socialization.</li>
+            <li>Evaluate the diverse <strong>socioeconomic and cultural factors</strong> shaping the modern American student.</li>
+            <li>Identify strategies for creating <strong>resilient classroom communities</strong> for at-risk youth.</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>II. Major Concepts & Core Terms</h2>
+        <p><em>Click each term to reveal its definition/significance:</em></p>
+        
+        <div class="interactive-card" onclick="toggleContent('concept1')">
+            <strong>The School as a Social System</strong>
+            <div id="concept1" class="hidden-content">
+                Schools are not just buildings; they are social organisms where the "formal" (administration) and "informal" (peer groups) systems constantly interact.
+            </div>
+        </div>
+
+        <div class="interactive-card" onclick="toggleContent('term1')">
+            <strong>Hidden Curriculum</strong>
+            <div id="concept1" class="hidden-content">
+                The unstated norms, values, and beliefs transmitted to students through the underlying structure of the school environment.
+            </div>
+        </div>
+
+        <div class="interactive-card" onclick="toggleContent('term2')">
+            <strong>Socialization</strong>
+            <div id="term2" class="hidden-content">
+                The process by which students learn the rules and expectations of the society in which they live.
+            </div>
+        </div>
+
+        <div class="interactive-card" onclick="toggleContent('term3')">
+            <strong>At-Risk Students</strong>
+            <div id="term3" class="hidden-content">
+                Students whose living conditions or backgrounds (poverty, homelessness, substance abuse) place them at higher risk for educational failure.
+            </div>
+        </div>
+    </section>
+
+    
+
+    <section>
+        <h2>III. Lesson Sequence</h2>
+        <ol class="sequence-list">
+            <li><strong>The Hook (10 mins):</strong> "The Wall of Influence." Students list five things they learned in high school that weren't in a textbook. (Introduction to Hidden Curriculum).</li>
+            <li><strong>Direct Instruction (20 mins):</strong> Lecture on Parkay's "Dimensions of School Culture." Discuss the physical, social, and cultural aspects of the environment.</li>
+            <li><strong>The Modern Profile (20 mins):</strong> Data deep-dive into Chapter 8. Examining shifting demographics: ELL (English Language Learners), LGBTQ+ youth, and the impact of the digital divide.</li>
+            <li><strong>Guided Analysis (20 mins):</strong> Group analysis of school "climates." Comparing a bureaucratic, rule-heavy school vs. a collaborative, community-focused school.</li>
+            <li><strong>Synthesis & Closing (15 mins):</strong> "The Teacher's Role." How to navigate the system while remaining a student advocate.</li>
+        </ol>
+    </section>
+
+    <section class="activity-box">
+        <h2>IV. Suggested Activities</h2>
+        <h3>Activity 1: The "Hidden Curriculum" Audit</h3>
+        <p>In small groups, students review a sample school handbook. They must identify rules that teach "compliance" versus rules that teach "critical thinking."</p>
+        
+        <h3>Activity 2: Student Persona Mapping</h3>
+        <p>Using Parkay's descriptions of diversity in Chapter 8, students create a "Student Persona" (e.g., a first-generation immigrant student or a student in the foster care system). They must list three specific environmental barriers this student might face in a traditional social system.</p>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 Instructional Design for Foundations of Education | Based on Parkay 11th Edition</p>
+        <button onclick="alert('Stay curious! Your role as a teacher is to bridge the gap between the system and the child.')">Reflection Prompt</button>
+    </footer>
+</div>
+
+<script>
+    function toggleContent(id) {
+        var element = document.getElementById(id);
+        if (element.style.display === "block") {
+            element.style.display = "none";
+        } else {
+            element.style.display = "block";
+        }
+    }
+</script>
+
+</body>
+</html>
