@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dr. Vonda Wells | CWC Faculty Profile</title>
+    <style>
+        :root {
+            --cwc-blue: #003366;
+            --cwc-orange: #f36f21;
+            --text-gray: #333;
+            --light-gray: #f4f4f9;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: var(--light-gray);
+            color: var(--text-gray);
+            line-height: 1.6;
+            display: flex;
+            justify-content: center;
+            padding: 40px 20px;
+        }
+
+        .profile-card {
+            background: #fff;
+            max-width: 800px;
+            width: 100%;
+            border-radius: 12px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            overflow: hidden;
+            display: flex;
+            flex-direction: row;
+        }
+
+        @media (max-width: 600px) {
+            .profile-card {
+                flex-direction: column;
+            }
+        }
+
+        .profile-sidebar {
+            background-color: var(--cwc-blue);
+            color: white;
+            padding: 40px;
+            text-align: center;
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .profile-img {
+            width: 180px;
+            height: 180px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 4px solid var(--cwc-orange);
+            margin-bottom: 20px;
+            background-color: #ddd;
+        }
+
+        .contact-info {
+            margin-top: 20px;
+            font-size: 0.9rem;
+            text-align: left;
+            width: 100%;
+        }
+
+        .contact-item {
+            margin-bottom: 12px;
+            display: flex;
+            align-items: center;
+        }
+
+        .contact-label {
+            font-weight: bold;
+            color: var(--cwc-orange);
+            margin-right: 8px;
+            font-size: 0.75rem;
+            text-transform: uppercase;
+        }
+
+        .profile-main {
+            padding: 40px;
+            flex: 2;
+        }
+
+        h1 {
+            color: var(--cwc-blue);
+            font-size: 2.2rem;
+            margin-bottom: 5px;
+        }
+
+        .job-title {
+            color: var(--cwc-orange);
+            font-weight: 600;
+            font-size: 1.1rem;
+            margin-bottom: 20px;
+            border-bottom: 2px solid var(--light-gray);
+            padding-bottom: 10px;
+        }
+
+        h2 {
+            font-size: 1.2rem;
+            margin: 20px 0 10px;
+            color: var(--cwc-blue);
+        }
+
+        p {
+            margin-bottom: 15px;
+            font-size: 0.95rem;
+        }
+
+        .tag-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            margin-top: 10px;
+        }
+
+        .tag {
+            background: var(--light-gray);
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            font-weight: 500;
+        }
+
+        .btn-email {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 20px;
+            background-color: var(--cwc-orange);
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: opacity 0.3s;
+        }
+
+        .btn-email:hover {
+            opacity: 0.9;
+        }
+    </style>
+</head>
+<body>
+
+    <article class="profile-card">
+        <section class="profile-sidebar">
+            <!-- Using the uploaded file name as the source -->
+            <img src="8.8.23.jpg" alt="Dr. Vonda Wells" class="profile-img" onerror="this.src='https://via.placeholder.com/180?text=Vonda+Wells'">
+            
+            <div class="contact-info">
+                <div class="contact-item">
+                    <span class="contact-label">Email:</span>
+                    <span id="email-text">vwells@cwc.edu</span>
+                </div>
+                <div class="contact-item">
+                    <span class="contact-label">Office:</span>
+                    <span>MH 152L</span>
+                </div>
+                <div class="contact-item">
+                    <span class="contact-label">Institution:</span>
+                    <span>Central Wyoming College</span>
+                </div>
+            </div>
+
+            <a href="mailto:vwells@cwc.edu" class="btn-email">Contact Me</a>
+        </section>
+
+        <section class="profile-main">
+            <h1>Dr. Vonda Wells</h1>
+            <div class="job-title">Education Faculty</div>
+
+            <p>
+                As an instructor of Education at CWC, my background spans from developmental preschool and Head Start programs to public schools and adult education. I am passionate about supporting the next generation of educators and serving as a resource for students navigating the diverse opportunities within the field of education.
+            </p>
+
+            <h2>Education & Credentials</h2>
+            <p>
+                I hold a <strong>Ph.D. in Education</strong> and a Master’s in Curriculum and Instruction from the University of Wyoming. My certifications include K-6 Elementary Education with endorsements in:
+            </p>
+            <div class="tag-container">
+                <span class="tag">Early Childhood Special Ed</span>
+                <span class="tag">English as a Second Language</span>
+                <span class="tag">Principal K-12</span>
+            </div>
+
+            <h2>Philosophy</h2>
+            <p>
+                "I hope that you will all continue to be lifelong learners. As educators, I believe this is one of the most important goals we can strive for."
+            </p>
+        </section>
+    </article>
+
+    <script>
+        // Interactive element: Log a professional greeting to the console
+        document.addEventListener('DOMContentLoaded', () => {
+            console.log("Profile page for Dr. Vonda Wells loaded successfully.");
+            
+            // Example of a simple interaction: click email to copy (optional enhancement)
+            const emailSpan = document.getElementById('email-text');
+            emailSpan.style.cursor = 'pointer';
+            emailSpan.title = 'Click to copy email';
+            
+            emailSpan.addEventListener('click', () => {
+                const textArea = document.createElement("textarea");
+                textArea.value = emailSpan.textContent;
+                document.body.appendChild(textArea);
+                textArea.select();
+                document.execCommand('copy');
+                document.body.removeChild(textArea);
+                
+                const originalText = emailSpan.textContent;
+                emailSpan.textContent = 'Copied!';
+                setTimeout(() => {
+                    emailSpan.textContent = originalText;
+                }, 1500);
+            });
+        });
+    </script>
+</body>
+</html>
