@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Foundations of Education Lesson Plan</title>
+    <style>
+        :root {
+            --primary: #2c3e50;
+            --secondary: #34495e;
+            --accent: #3498db;
+            --light: #f4f7f6;
+            --white: #ffffff;
+            --shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            background-color: var(--light);
+            color: var(--primary);
+            margin: 0;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: auto;
+            background: var(--white);
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: var(--shadow);
+        }
+
+        header {
+            border-bottom: 4px solid var(--accent);
+            margin-bottom: 30px;
+            padding-bottom: 10px;
+        }
+
+        h1 { color: var(--primary); margin-bottom: 5px; }
+        h2 { color: var(--accent); border-bottom: 1px solid #ddd; padding-bottom: 5px; margin-top: 30px; }
+        h3 { color: var(--secondary); }
+
+        .citation {
+            font-style: italic;
+            font-size: 0.9em;
+            color: #7f8c8d;
+            margin-bottom: 20px;
+        }
+
+        .badge {
+            display: inline-block;
+            background: var(--accent);
+            color: white;
+            padding: 5px 12px;
+            border-radius: 20px;
+            font-size: 0.8em;
+            margin-right: 5px;
+        }
+
+        .section-box {
+            background: #f9f9f9;
+            border-left: 5px solid var(--accent);
+            padding: 15px;
+            margin: 20px 0;
+        }
+
+        ul { padding-left: 20px; }
+        li { margin-bottom: 10px; }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+
+        table, th, td { border: 1px solid #ddd; }
+        th, td { padding: 12px; text-align: left; }
+        th { background-color: var(--primary); color: white; }
+
+        .interactive-btn {
+            background: var(--accent);
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        .interactive-btn:hover { background: var(--secondary); }
+
+        #activity-feedback {
+            margin-top: 15px;
+            font-weight: bold;
+            color: #27ae60;
+            display: none;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <header>
+        <h1>Lesson: Schools as Social Systems</h1>
+        <p class="citation">Source: Parkay, F. W. (2020). <em>Becoming A Teacher</em> (11th Ed.). Pearson Education.</p>
+        <div>
+            <span class="badge">Foundations of Education</span>
+            <span class="badge">Sociology of Education</span>
+            <span class="badge">Learner Diversity</span>
+        </div>
+    </header>
+
+    <section>
+        <h2>Student Learning Objectives</h2>
+        <p>By the end of this lesson, students will be able to:</p>
+        <ul>
+            <li><strong>Analyze</strong> the school as a social system by identifying its organizational culture and climate.</li>
+            <li><strong>Identify</strong> key characteristics of "Today's Students," including demographic shifts and socio-economic influences.</li>
+            <li><strong>Explain</strong> how school culture impacts student achievement and teacher professional satisfaction.</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>Major Concepts & Core Terms</h2>
+        <table>
+            <tr>
+                <th>Term</th>
+                <th>Definition / Concept</th>
+            </tr>
+            <tr>
+                <td><strong>School Culture</strong></td>
+                <td>The collective "personality" of a school, including its shared values, beliefs, and rituals.</td>
+            </tr>
+            <tr>
+                <td><strong>Social System</strong></td>
+                <td>A set of interrelated parts (teachers, students, admin) working together within a defined structure.</td>
+            </tr>
+            <tr>
+                <td><strong>Diversity & SES</strong></td>
+                <td>The impact of Socioeconomic Status and cultural backgrounds on student "readiness to learn."</td>
+            </tr>
+            <tr>
+                <td><strong>Resiliency</strong></td>
+                <td>The ability of students to overcome adverse environmental conditions (poverty, stress) to succeed.</td>
+            </tr>
+        </table>
+    </section>
+
+    <section>
+        <h2>Lesson Sequence</h2>
+        <ol>
+            <li><strong>Anticipatory Set (10 mins):</strong> "The Hidden Curriculum" discussion. Ask students: <em>What did your high school 'feel' like the moment you walked in?</em></li>
+            <li><strong>Direct Instruction (20 mins):</strong> 
+                <ul>
+                    <li>The School as a Bureaucracy vs. a Community.</li>
+                    <li>Demographics of the 21st-century classroom (Parkay, Ch. 8).</li>
+                </ul>
+            </li>
+            <li><strong>Guided Practice (15 mins):</strong> Mapping the School Social System (Admin &rarr; Teachers &rarr; Students &rarr; Community).</li>
+            <li><strong>Independent Application (10 mins):</strong> Case study analysis on "Trauma-Sensitive Schools."</li>
+        </ol>
+    </section>
+
+    <section class="section-box">
+        <h2>Interactive Suggested Activity</h2>
+        <h3>Activity: Culture Audit</h3>
+        <p>Imagine you are a teacher entering a new school. Which "Social System" element do you believe is the <strong>most</strong> influential on a student's success?</p>
+        
+        <select id="culture-choice" style="padding: 8px; width: 100%; border-radius: 4px;">
+            <option value="">-- Select an option --</option>
+            <option value="peer">Peer Group Pressure (Student Social System)</option>
+            <option value="teacher">Teacher Expectations (School Culture)</option>
+            <option value="home">Socioeconomic Background (External Environment)</option>
+            <option value="admin">Administrative Leadership (Organizational Structure)</option>
+        </select>
+        
+        <br><br>
+        <button class="interactive-btn" onclick="showInsight()">Submit Reflection</button>
+        
+        <div id="activity-feedback"></div>
+    </section>
+
+    <footer>
+        <hr>
+        <p><small>&copy; 2026 Educational Foundations Curriculum - Based on Parkay 11e.</small></p>
+    </footer>
+</div>
+
+<script>
+    function showInsight() {
+        const choice = document.getElementById('culture-choice').value;
+        const feedback = document.getElementById('activity-feedback');
+        
+        let message = "";
+        
+        switch(choice) {
+            case "peer":
+                message = "Correct! Parkay emphasizes that the 'student subculture' often dictates classroom norms more than adult rules.";
+                break;
+            case "teacher":
+                message = "Insightful. The 'Pygmalion Effect' (Teacher Expectations) is a core pillar of the school social system.";
+                break;
+            case "home":
+                message = "Essential point. Parkay notes that SES is one of the strongest predictors of standardized test performance.";
+                break;
+            case "admin":
+                message = "True. The 'Climate' of a school is often a reflection of the leadership's vision and support structures.";
+                break;
+            default:
+                message = "Please select an element to see the educational insight.";
+        }
+        
+        feedback.style.display = "block";
+        feedback.innerHTML = message;
+    }
+</script>
+
+</body>
+</html>
